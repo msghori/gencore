@@ -102,7 +102,7 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-[#050816] to-[#0a1128]">
+    <section id="contact" className="py-24">
       <div className="container mx-auto px-4" ref={ref}>
         <motion.div
           variants={containerVariants}
