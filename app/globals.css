@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1e3799;
+  --primary-foreground: #ffffff;
+  --secondary: #ff8c00;
+  --secondary-foreground: #ffffff;
+  --background: #050816;
+  --foreground: #ffffff;
+  --muted: #0a1128;
+  --muted-foreground: #718093;
+  --border: #1e3799;
+  --input: #1e3799;
+  --ring: #ff8c00;
+  --radius: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--foreground);
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1128;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3799;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8c00;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-orange-400;
+}
+
+/* Glass effect */
+.glass-effect {
+  @apply bg-blue-900/20 backdrop-blur-sm border border-blue-800/50;
+}
+
+/* Animated background */
+.animated-bg {
+  background: linear-gradient(-45deg, #1e3799, #0a1128, #ff8c00, #e67e00);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Floating animation */
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.nextjs-toast-errors-parent{
+  display: none;
+}

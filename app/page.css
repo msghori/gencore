@@ -1,0 +1,20 @@
+.nextjs-toast-errors-parent, .nextjs-error-with-static {
+    display: none !important;
+}
+
+.nextjs-toast {
+    display: none !important;
+}
+
+.banner-sec {
+    padding-top: 15rem;
+    background: url('https://picsum.photos/id/242/1920/1080') no-repeat center center fixed;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.banner-sec {
+    padding-top: 10rem;
+
+}
